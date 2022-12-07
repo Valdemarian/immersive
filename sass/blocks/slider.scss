@@ -1,0 +1,32 @@
+.slider{
+	width: 100%;
+	height: 100%;
+	background: #f2f2f2;
+
+	@media (min-width: $screen-md){
+		height: 830px;
+	}
+
+	&__wrap{
+		margin: 0 auto;
+		width: 100%;
+
+		@media (min-width: $screen-md){
+			width: 501px;
+		}
+	}
+
+	&__h1{
+  		width: 100%;
+    	margin: 0;
+    	font-size: 40px;
+    	color: $text-color;
+    	padding: 20px 0;
+
+  	}
+
+  	&__uslugi{
+  		text-align: center;
+  		height: 100px;
+  	}
+}

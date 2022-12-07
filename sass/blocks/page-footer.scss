@@ -1,0 +1,105 @@
+.page-footer {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  justify-content: center;
+  align-items: center;
+  background-color: #f2f2f2;
+
+  @media (min-width: $screen-md){
+    flex-direction: row;
+    justify-content: space-around;
+    height: 120px;
+  }
+
+  &__svg{
+    fill:#fff;
+    width: 20px;
+    height: 20px;
+    margin-top: 5px;
+  }
+
+  &__name{
+    margin-top: 15px;
+    display: inline-block;
+    color: #000;
+    font-family: ptsans bold;
+    text-align: center;
+
+    @media (min-width: $screen-md){
+      text-align: left;
+    }
+  }
+
+
+
+  &__social-links{
+    order: -1;
+    display: flex;
+    justify-content: flex-end;
+    width: 260px;
+    padding: 0;
+
+    @media (min-width: $screen-md){
+      order: 0;
+      width: 260px;
+      order: 0;
+    }
+  }
+
+  &__social-links-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    list-style-type: none;
+    background-color: #88725F;
+    height: 48px;
+    width: 45px;
+    margin-left: 8px;
+
+    &:first-child{
+      margin-left: 0;
+    }
+
+    &:hover{
+      background-color:#5671D4;
+      box-shadow: 0 0 5px #5671D4;
+    }
+  }
+
+  &__developer {
+    text-transform: none;
+    text-decoration: none;
+    display: inline-block;
+    color: #000;
+    font-family: ptsans;
+    font-size: 12px;
+    display: inline-block;
+    text-transform: uppercase;
+    margin-top: 15px;
+    font-weight: bold;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__od{
+    fill: #fff;
+    width: 25px;
+    height: 25px;
+  }
+
+
+}
+
+.fa-vk{
+  color: #fff;
+}
+.fa-instagram{
+  color: #fff;
+}
+.fa-odnoklassniki{
+  color: #fff;
+}

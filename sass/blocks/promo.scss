@@ -1,0 +1,95 @@
+.promo {
+  display: block;
+  background:#f2f2f2;
+
+  @media (min-width: $screen-md) {
+    height: 750px;
+    display: flex;
+    flex-wrap:wrap;
+    flex-direction: row;
+  }
+
+  &__inner-block {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    @media (min-width: $screen-md){
+      width: 25%;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+
+  &__inner-block-name {
+    align-content: center;
+
+    @media (min-width: $screen-md){
+      margin-left: 0;
+    }
+  }
+
+  &__inner-block-descr {
+
+    @media (min-width: $screen-md){
+      margin-left: 0;
+    }
+  }
+
+  &__inner-block-icon{
+    background-color: #fff;
+    height: 60px;
+    width: 60px;
+    align-self: flex-start;
+    border-radius: 50%;
+    box-shadow: 1px 1px 7px rgba(0,0,0,0.3);
+
+    @media (min-width: $screen-md){
+      height: 100px;
+      width: 100px;
+      align-self: center;
+    }
+
+  }
+
+  &__inner-wrapper{
+    text-align: left;
+    min-width: 250px;
+    width: 250px;
+
+    @media (min-width: $screen-md){
+      text-align: center;
+      margin-top: 15px;
+    }
+  }
+
+  &__svg{
+    fill:$main-color2;
+    height: 40px;
+    width: 40px;
+    margin-top: 8px;
+
+    @media (min-width: $screen-md){
+      margin-top: 18px;
+      height: 60px;
+      width: 60px;
+    }
+  }
+
+  &__uslugi{
+    display: block;
+    width: 100%;
+    height: 130px;
+    text-align: center;
+    margin-bottom: 0;
+  }
+
+  &__h1{
+    margin-top: 60px;
+    margin-bottom: 0;
+    font-size: 40px;
+    color: $text-color;
+  }
+}

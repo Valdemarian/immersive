@@ -1,0 +1,160 @@
+body
+	font-family: "Open Sans", sans-serif
+	font-weight: normal
+	font-size: 14px
+	min-width: 320px
+	position: relative
+	line-height: 1.6
+	-webkit-font-smoothing: antialiased
+	overflow-x: hidden
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: red
+body input:required:valid,
+body textarea:required:valid
+	color: green
+
+.sad
+	background-color: rgba(0, 0, 0, 0.3)
+	height: 100vh
+	width: 100%
+	position: absolute
+	top: 0
+
+.main_head
+	position: relative
+	background-image: url(../img/img1.jpg)
+	width: 100%
+	height: 100vh
+	background-size: cover
+	background-repeat: no-repeat
+	text-align: center
+	padding: 65px 0 0
+	color: #fff
+	h1
+		text-transform: uppercase
+		font-weight: 400
+		font-size: 20px
+		margin: 0
+		margin-top: 60px
+		@media (min-width: $screen-lg)
+			font-size: 49px
+			line-height: 60px
+			margin-top: 60px
+		span
+			font-weight: bold
+			color: #ABEDFF
+			font-size: 20px
+			@media (min-width: $screen-lg)
+				font-size: 70px
+
+.menu-open
+	position: relative
+	top: 8px
+	z-index: 3
+	float: right
+	font-size: 25px
+	cursor: pointer
+	transform: scale(1)
+
+.top__line
+	width: 100%
+	height: 40px
+	position: fixed
+	top: 0
+	left: 0
+	&-icon
+		position: relative
+		top: 8px
+		z-index: 3
+		float: right
+		font-size: 25px !important
+		transform: scale(0)
+		cursor: pointer
+		&:hover
+			text-shadow: 1px 1px 14px rgba(255,255,255,1)
+	&-logo
+		position: absolute
+		top: 0
+		z-index: 2
+		text-align: left
+		line-height: 40px
+		transform: scale(0)
+		img
+			height: 25px
+	&-left,&-right
+		position: absolute
+		width: 0
+		height: 40px 
+		background-color: rgba(87,73,60,.8)
+		z-index: 1
+		transition: width .3s ease
+	&-left
+		top: 0
+		left: 50%
+	&-right
+		top: 0
+		right: 50%
+	nav
+		float: right
+	&-menu
+		position: absolute
+		left: 0
+		top: 0
+		opacity: 0
+		list-style-type: none
+		width: 100%
+		height: 100vh
+		background-color: rgba(87,73,60,.8)
+		display: none
+		justify-content: center
+		align-items: center
+		flex-direction: column
+		padding: 10px 20px
+		margin-top: 40px
+		transition: all .5s ease
+		li
+			margin-bottom: 10px
+			font-size: 20px
+			a
+				color: #fff
+				text-transform: uppercase
+				display: block
+				&:hover
+					transition: transform 0.15s linear
+					transform: scale(1.5, 1.5)
+					text-shadow: 1px 1px 14px rgba(255,255,255,1)
+					text-decoration: none
+.animated 
+ 	animation-duration: 2s;
+.open
+	display: flex
+	// right: 0
+	opacity: 1
+
+.logo_head
+	margin: 70px 0 auto
+	img
+		display: inline-block
+		transform: scale(1)
+		transition: all .5s ease
+
+.img-responsive
+	width: 100px
+	height: 100px
+	@media (min-width: $screen-lg)
+		width: 200px
+		height: 200px
+
+.w50
+	width: 50%
+.sc0
+	transform: scale(0)!important
+	transition: all .5s ease
+.sc1
+	transform: scale(1)
+	transition: all .5s ease
+
+.hidden
+	display: none
