@@ -146,12 +146,12 @@ body textarea:required:valid {
     font-weight: bolder;
   }
 
-  @media (max-width: 360px) {
+  @media (max-width: 375px) {
     .sad__discript-h1 h1 {
       font-size: 29px;
       line-height: 1.2;
     }}
-@media (min-width: 361px) and (max-width: 767px){
+@media (min-width: 376px) and (max-width: 767px){
   /* @media (max-width: 767px) { */
     .sad__discript-h1 h1 {
       font-size: 31px;
@@ -381,12 +381,18 @@ body textarea:required:valid {
     font-size: 20px;
     font-weight: 700;
   }
-  @media (max-width: 767px) {
+  @media (max-width: 375px) {
+    .number {
+        font-size: 20px;
+    }
+  }
+
+  @media (min-width: 376px) and (max-width: 767px){
     .number {
       font-size: 17px;
   }
   .number_phone i{
-    margin-top: 5px;
+    margin-top: 7px;
   }}
 
 
@@ -397,7 +403,7 @@ body textarea:required:valid {
     height: 30px;
     margin-right: 5px;
   }
-  @media (max-width: 360px){
+  @media (max-width: 375px){
     .number_phone{
         display: none;
     }
