@@ -148,7 +148,7 @@ body textarea:required:valid {
 
   @media (max-width: 375px) {
     .sad__discript-h1 h1 {
-      font-size: 29px;
+      font-size: 28px;
       line-height: 1.2;
     }}
 @media (min-width: 376px) and (max-width: 767px){
