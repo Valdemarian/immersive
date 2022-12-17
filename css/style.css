@@ -917,6 +917,8 @@ body textarea:required:valid {
       font-size: 25px;
       margin-top: 30px;
       margin-bottom: 0;
+      margin-left: 15px;
+      margin-right: 15px;
     }}
 
 
